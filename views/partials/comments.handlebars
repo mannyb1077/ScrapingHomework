@@ -1,0 +1,15 @@
+{{#each comments}}
+    <div class="mdl-card__supporting-text mdl-card--border">
+              <div class="comment-body">  
+              <strong>{{this.author}}</strong>
+
+              <p>{{this.body}}</p>
+              </div>
+              <div>
+                <button class="mdl-button mdl-js-button mdl-button--icon comment-action">
+                    <i class="material-icons">Delete</i>
+                </button>
+              </div>
+    </div>
+
+{{/each}}
